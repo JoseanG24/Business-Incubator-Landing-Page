@@ -60,13 +60,13 @@ const About = () => {
         <h1 className="text-5xl font-bold text-white mb-24">¿Quiénes somos?</h1>
         <button
             onClick={() => changeSlide(false)}
-            className="absolute left-0 z-10 ml-4 md:ml-8 lg:ml-12 xl:ml-16 text-white bg-black bg-opacity-75 hover:bg-opacity-100 rounded-full p-4 text-4xl focus:outline-none"
+            className="absolute left-0 z-10 ml-4 md:ml-8 lg:ml-12 xl:ml-16 mt-20 text-white bg-black bg-opacity-75 hover:bg-opacity-100 rounded-full p-4 text-4xl focus:outline-none"
           >
             &#10094;
           </button>
           <button
             onClick={() => changeSlide(true)}
-            className="absolute right-0 z-10 mr-4 md:mr-8 lg:mr-12 xl:mr-16 text-white bg-black bg-opacity-75 hover:bg-opacity-100 rounded-full p-4 text-4xl focus:outline-none"
+            className="absolute right-0 z-10 mr-4 md:mr-8 lg:mr-12 xl:mr-16 mt-20 text-white bg-black bg-opacity-75 hover:bg-opacity-100 rounded-full p-4 text-4xl focus:outline-none"
           >
             &#10095;
           </button>
