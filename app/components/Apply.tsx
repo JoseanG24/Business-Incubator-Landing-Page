@@ -114,7 +114,7 @@ const ApplyNow = () => {
       <div className="mt-8 text-left">
         <p className="text-lg">
           ¿Tienes preguntas? Revisa nuestras{" "}
-          <a href="/faq" className="text-red-600 hover:underline">
+          <a href="/pages/blog" className="text-red-600 hover:underline">
             Preguntas Frecuentes
           </a>{" "}
           o{" "}
