@@ -22,7 +22,7 @@ const TestimonialCarousel = () => {
         <div className="space-y-4">
           {testimonials.map((testimonial, index) => (
             <div key={index} className="bg-gray-800 text-white p-4 rounded shadow-lg">
-              <p className="italic">"{testimonial.testimonial}"</p>
+              <p className="italic">&quot!{testimonial.testimonial}&quot;</p>
               <p className="text-right mt-4">- {testimonial.name}</p>
             </div>
           ))}

@@ -72,7 +72,7 @@ const Blog = () => {
               comienzo común: un concepto brillante. En UnisHub, llevamos esos
               conceptos a través de un proceso de refinamiento, desde la
               validación del mercado hasta la estrategia de marketing,
-              preparando a cada emprendimiento para el crucial "Demo Day" donde
+              preparando a cada emprendimiento para el crucial &quot;Demo Day&quot; donde
               las ideas se presentan ante inversores y la comunidad.
             </p>
             <br></br>
