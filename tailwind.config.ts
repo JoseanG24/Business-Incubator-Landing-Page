@@ -13,6 +13,14 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      fontFamily: {
+        protest: ['"Protest Strike"', 'sans-serif'],
+        libre: ['"Libre Baskerville"', 'mono'],
+        comforta: ['"Comfortaa"', '"sans-serif"'],
+        rubik: ['"Rubik Glitch Pop"', 'system-ui'],
+        source: ["'Source Code Pro'", 'monospace'],
+        poppins: ["'Poppins'", 'sans-serif'],
+      },
     },
   },
   plugins: [],
