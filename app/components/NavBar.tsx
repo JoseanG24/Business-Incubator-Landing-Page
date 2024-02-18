@@ -143,7 +143,7 @@ const Navbar = () => {
                   Blog y Noticias
                 </button>
               </Link>
-              <Link href="#contact">
+              <Link href="#footer">
                 <button className="block text-left px-3 py-2 rounded-md text-base font-medium hover:text-gray-200 hover:bg-red-800 transition-colors ease-in-out w-auto underline">
                   Contáctanos
                 </button>

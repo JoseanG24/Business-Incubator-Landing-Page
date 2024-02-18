@@ -30,10 +30,10 @@ const ApplyNow = () => {
 
   return (
     <div className="text-white max-w-4xl mx-auto p-8 rounded-lg mb-14">
-      <h2 className="text-3xl font-bold mb-6 text-left">
+      <h2 className="text-2xl font-bold mb-6 text-left">
         ¿Estás listo/a? Aplica ahora 👇
       </h2>
-      <p className="text-xl mb-8 text-left">
+      <p className="text-lg mb-8 text-left">
         Completa el formulario para aplicar a nuestra incubadora y da el primer
         paso hacia el éxito de tu emprendimiento.
       </p>
