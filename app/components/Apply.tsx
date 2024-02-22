@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Link from "next/link";
 import React, { useState } from "react";
 import axios from "axios";
@@ -13,8 +13,12 @@ const ApplyNow = () => {
     e.preventDefault();
 
     try {
-
-      axios.post('/api/upload-data', )
+      await axios.post("/api/upload-data", {
+        name,
+        email,
+        project,
+        phone,
+      });
 
       console.log("Aplicación enviada:", { name, email, project, phone });
       alert(`Aplicación enviada. ¡Gracias por tu interés en UnisHub, ${name}!`);
@@ -29,7 +33,7 @@ const ApplyNow = () => {
   };
 
   return (
-    <div className="text-white max-w-4xl mx-auto p-8 rounded-lg mb-14">
+    <div className="bg-black text-white max-w-4xl mx-auto p-8 rounded-lg mb-14">
       <h2 className="text-2xl font-bold mb-6 text-left">
         ¿Estás listo/a? Aplica ahora 👇
       </h2>
@@ -41,7 +45,9 @@ const ApplyNow = () => {
         <div>
           <label htmlFor="name" className="block text-lg font-medium">
             Nombre Completo{" "}
-            <b className="text-gray-400">(de cualquier integrante si es un proyecto grupal)</b>
+            <b className="text-gray-400">
+              (de cualquier integrante si es un proyecto grupal)
+            </b>
           </label>
           <input
             type="text"
@@ -56,7 +62,9 @@ const ApplyNow = () => {
         <div>
           <label htmlFor="email" className="block text-lg font-medium">
             Correo Electrónico{" "}
-            <b className="text-gray-400">(de cualquier integrante si es un proyecto grupal)</b>
+            <b className="text-gray-400">
+              (de cualquier integrante si es un proyecto grupal)
+            </b>
           </label>
           <input
             type="email"
@@ -71,7 +79,9 @@ const ApplyNow = () => {
         <div>
           <label htmlFor="phone" className="block text-lg font-medium">
             Número de teléfono{" "}
-            <b className="text-gray-400">(de cualquier integrante si es un proyecto grupal)</b>
+            <b className="text-gray-400">
+              (de cualquier integrante si es un proyecto grupal)
+            </b>
           </label>
           <input
             type="text"
@@ -86,7 +96,9 @@ const ApplyNow = () => {
         <div>
           <label htmlFor="project" className="block text-lg font-medium">
             Descripción del Proyecto{" "}
-            <b className="text-gray-400">(Asegurate te describir tu proyecto completo y detalladamente)</b>
+            <b className="text-gray-400">
+              (Asegurate te describir tu proyecto completo y detalladamente)
+            </b>
           </label>
           <textarea
             id="project"
@@ -105,20 +117,23 @@ const ApplyNow = () => {
         </button>
       </form>
       <div className="mt-10 text-center sm:text-left">
-      <p className="text-lg mb-4">
-        ¿Tienes preguntas? Revisa nuestras{" "}
-        <Link href="/pages/blog">
-          <button className="text-red-500 hover:text-red-700 hover:underline">Preguntas Frecuentes</button>
-        </Link>{" "}
-        o{" "}
-        <Link href="#footer">
-          <button className="text-red-500 hover:text-red-700">contáctanos a través de nuestras redes</button>
-        </Link>
-      </p>
-    </div>
+        <p className="text-lg mb-4">
+          ¿Tienes preguntas? Revisa nuestras{" "}
+          <Link href="/pages/blog">
+            <button className="text-red-500 hover:text-red-700 hover:underline">
+              Preguntas Frecuentes
+            </button>
+          </Link>{" "}
+          o{" "}
+          <Link href="#footer">
+            <button className="text-red-500 hover:text-red-700">
+              contáctanos a través de nuestras redes
+            </button>
+          </Link>
+        </p>
+      </div>
     </div>
   );
-  
 };
 
 export default ApplyNow;

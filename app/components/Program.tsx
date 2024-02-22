@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Program = () => {
   return (
-    <div className="py-6 md:py-12 border-t-2 border-b-2">
+    <div className="bg-black py-6 md:py-12 border-t-2 border-b-2">
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" />
       <link
