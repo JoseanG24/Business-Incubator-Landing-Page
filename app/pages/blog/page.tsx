@@ -5,7 +5,7 @@ import TestimonialCarousel from "@/app/components/Carousel";
 
 const Blog = () => {
   return (
-    <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div className="bg-black max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <div className="flex flex-wrap justify-center -mx-2">
         <Link href="/">
           <button className="text-red-600 hover:underline text-lg my-3 mx-2">

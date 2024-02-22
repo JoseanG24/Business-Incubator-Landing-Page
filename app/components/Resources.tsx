@@ -20,7 +20,7 @@ const Resources = () => {
   };
 
   return (
-    <div className="resources-section my-32 flex flex-col items-center">
+    <div className="bg-black resources-section my-32 flex flex-col items-center">
       <h1 className="text-3xl md:text-5xl py-20 font-bold"><b className="text-red-600">Contenido</b> Destacado</h1>
       <div className="featured-content">
         {/* Contenido destacado - Video de YouTube embebido */}
