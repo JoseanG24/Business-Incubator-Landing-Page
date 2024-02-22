@@ -28,7 +28,7 @@ const Program = () => {
               comercialización, te acompañamos en cada fase del viaje
               emprendedor.
             </p>
-            <p className="text-xl">
+            <p className="text-lg md:text-xl">
               Con una duración adaptada a cada proyecto, nuestro programa te
               ofrece las herramientas y conocimientos necesarios para alcanzar
               tus metas.
