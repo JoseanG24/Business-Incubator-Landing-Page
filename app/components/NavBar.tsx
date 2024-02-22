@@ -8,11 +8,6 @@ const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [lastScrollTop, setLastScrollTop] = useState(0);
 
-  const menuStyles = {
-    closed: "transform translate-x-full transition ease-in-out duration-500",
-    open: "transform translate-x-0 transition ease-in-out duration-500",
-  };
-
   const handleScroll = () => {
     const currentScroll =
       window.pageYOffset || document.documentElement.scrollTop;
@@ -37,7 +32,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`md:bg-black fixed w-full sm:py-2 z-30 transition-transform duration-300 ease-in-out ${
+      className={`bg-black fixed w-full sm:py-2 z-30 transition-transform duration-300 ease-in-out ${
         showNav ? "translate-y-0" : "-translate-y-full"
       } md:shadow-md md:shadow-white/50`}
     >
@@ -46,7 +41,7 @@ const Navbar = () => {
           <div className="flex items-center">
             <button
               onClick={toggleMobileMenu}
-              className="text-white text-3xl mb-2 md:hidden"
+              className="text-white text-3xl mb-2 lg:hidden"
             >
               <span>≣</span>
             </button>
@@ -62,7 +57,7 @@ const Navbar = () => {
                 </h1>
               </Link>
             </div>
-            <div className="hidden md:block">
+            <div className="hidden lg:block">
               <div className="ml-10 flex items-baseline space-x-4">
                 <Link href="#home">
                   <button className="px-3 py-2 rounded-md text-sm font-medium hover:text-red-500 hover:scale-110 transition-all duration-300">

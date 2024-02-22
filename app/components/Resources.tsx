@@ -21,7 +21,7 @@ const Resources = () => {
 
   return (
     <div className="resources-section my-32 flex flex-col items-center">
-      <h1 className="text-5xl py-20 font-bold"><b className="text-red-600 font-semibold">Contenido</b> Destacado</h1>
+      <h1 className="text-3xl md:text-5xl py-20 font-bold"><b className="text-red-600">Contenido</b> Destacado</h1>
       <div className="featured-content">
         {/* Contenido destacado - Video de YouTube embebido */}
         <div className="ring-red-700 ring-8 hover:ring-2 hover:ring-white ring-opacity-75 shadow-xl rounded-lg overflow-hidden transform transition duration-500 hover:scale-110">
@@ -35,14 +35,14 @@ const Resources = () => {
       </div>
       <div className="youtube-channel-link my-14">
         {/* Botón o tarjeta para ir al canal de YouTube */}
-        <a
-          href="https://www.youtube.com/@CanalUnisGT/videos"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-4xl font-light font-poppins text-white hover:text-red-600 hover:underline"
-        >
-          Más videos
-        </a>
+        <Link href="https://www.youtube.com/@CanalUnisGT/videos">
+          <button
+            rel="noopener noreferrer"
+            className="text-2xl md:text-4xl font-light font-poppins text-white hover:text-red-600 hover:underline"
+          >
+            Más videos
+          </button>
+        </Link>
       </div>
     </div>
   );

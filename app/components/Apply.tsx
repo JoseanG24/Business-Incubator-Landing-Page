@@ -41,9 +41,7 @@ const ApplyNow = () => {
         <div>
           <label htmlFor="name" className="block text-lg font-medium">
             Nombre Completo{" "}
-            <b className="text-gray-400">
-              (de cualquier integrante si es un proyecto grupal)
-            </b>
+            <b className="text-gray-400">(de cualquier integrante si es un proyecto grupal)</b>
           </label>
           <input
             type="text"
@@ -58,9 +56,7 @@ const ApplyNow = () => {
         <div>
           <label htmlFor="email" className="block text-lg font-medium">
             Correo Electrónico{" "}
-            <b className="text-gray-400">
-              (de cualquier integrante si es un proyecto grupal)
-            </b>
+            <b className="text-gray-400">(de cualquier integrante si es un proyecto grupal)</b>
           </label>
           <input
             type="email"
@@ -73,11 +69,9 @@ const ApplyNow = () => {
           />
         </div>
         <div>
-          <label htmlFor="text" className="block text-lg font-medium">
+          <label htmlFor="phone" className="block text-lg font-medium">
             Número de teléfono{" "}
-            <b className="text-gray-400">
-              (de cualquier integrante si es un proyecto grupal)
-            </b>
+            <b className="text-gray-400">(de cualquier integrante si es un proyecto grupal)</b>
           </label>
           <input
             type="text"
@@ -91,9 +85,8 @@ const ApplyNow = () => {
         </div>
         <div>
           <label htmlFor="project" className="block text-lg font-medium">
-            Descripción del Proyecto <b className="text-gray-400">
-              (Asegurate te describir tu proyecto completo y detalladamente)
-            </b>
+            Descripción del Proyecto{" "}
+            <b className="text-gray-400">(Asegurate te describir tu proyecto completo y detalladamente)</b>
           </label>
           <textarea
             id="project"
@@ -106,26 +99,26 @@ const ApplyNow = () => {
         </div>
         <button
           type="submit"
-          className="px-6 py-2 border border-transparent text-lg font-medium rounded-md shadow-sm bg-red-600 hover:bg-red-900 focus:outline-none focus:ring-2 hover:scale-105 focus:ring-offset-2 focus:ring-yellow-500 transition duration-300"
+          className="px-6 py-2 border border-transparent md:text-lg font-medium rounded-md shadow-sm bg-red-600 hover:bg-red-900 focus:outline-none focus:ring-2 hover:scale-105 focus:ring-offset-2 focus:ring-yellow-500 transition duration-300"
         >
           Enviar Aplicación
         </button>
       </form>
-      <div className="mt-8 text-left">
-        <p className="text-lg">
-          ¿Tienes preguntas? Revisa nuestras{" "}
-          <a href="/pages/blog" className="text-red-600 hover:underline">
-            Preguntas Frecuentes
-          </a>{" "}
-          o{" "}
-          <Link href="#footer" className="text-red-600 hover:underline">
-            contáctanos a través de nuestras redes
-          </Link>
-          .
-        </p>
-      </div>
+      <div className="mt-10 text-center sm:text-left">
+      <p className="text-lg mb-4">
+        ¿Tienes preguntas? Revisa nuestras{" "}
+        <Link href="/pages/blog">
+          <button className="text-red-500 hover:text-red-700 hover:underline">Preguntas Frecuentes</button>
+        </Link>{" "}
+        o{" "}
+        <Link href="#footer">
+          <button className="text-red-500 hover:text-red-700">contáctanos a través de nuestras redes</button>
+        </Link>
+      </p>
+    </div>
     </div>
   );
+  
 };
 
 export default ApplyNow;
