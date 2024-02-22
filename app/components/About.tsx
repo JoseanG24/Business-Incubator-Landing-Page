@@ -34,10 +34,8 @@ const About = () => {
   ];
 
   const whiteShadowStyle = {
-    boxShadow: '0 0px 15px 5px rgba(255, 255, 255, 0.39)',
+    boxShadow: '0px 0px 8px 2px rgba(255, 255, 255, 0.39)',
     transition: 'opacity 0.7s',
-    width: '100vh', 
-    height: '50vh',
     margin: '0 auto',
   };
 
@@ -56,32 +54,38 @@ const About = () => {
 
   return (
     <>
-      <div className="flex flex-col items-center justify-center min-h-screen bg-black">
-        <h1 className="text-5xl font-bold text-white mb-24">¿Quiénes somos?</h1>
+      <div className="flex flex-col items-center justify-center min-h-screen bg-black px-4 sm:px-8">
+        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-12 sm:mb-24">¿Quiénes somos?</h1>
         <button
             onClick={() => changeSlide(false)}
-            className="absolute left-0 z-10 ml-4 md:ml-8 lg:ml-12 xl:ml-16 mt-20 text-white bg-black bg-opacity-75 hover:bg-opacity-100 rounded-full p-4 text-4xl focus:outline-none"
+            className="absolute left-0 z-10 ml-4 md:ml-8 lg:ml-12 xl:ml-16 mt-10 md:mt-20 text-white hover:bg-opacity-100 rounded-full p-2 md:p-4 text-2xl md:text-4xl focus:outline-none"
           >
             &#10094;
           </button>
           <button
             onClick={() => changeSlide(true)}
-            className="absolute right-0 z-10 mr-4 md:mr-8 lg:mr-12 xl:mr-16 mt-20 text-white bg-black bg-opacity-75 hover:bg-opacity-100 rounded-full p-4 text-4xl focus:outline-none"
+            className="absolute right-0 z-10 mr-4 md:mr-8 lg:mr-12 xl:mr-16 mt-10 md:mt-20 text-white md:bg-black bg-opacity-75 hover:bg-opacity-100 rounded-full p-2 md:p-4 text-2xl md:text-4xl focus:outline-none"
           >
             &#10095;
           </button>
-        <div className="relative w-3/4 max-w-6xl">
+        <div className="relative w-full max-w-4xl sm:max-w-6xl">
           <div
-            className={`w-auto aspect-w-16 aspect-h-9 overflow-hidden rounded-lg bg-opacity-20 bg-black backdrop-blur-lg flex justify-center items-center transition-opacity duration-500 ${
-              slideIn ? "opacity-100" : "opacity-20"
-            }`}
+            className={`hidden lg:flex w-full h-auto sm:aspect-w-16 sm:aspect-h-9 overflow-hidden rounded-lg bg-opacity-20 bg-black backdrop-blur-lg  justify-center items-center transition-opacity duration-500 ${slideIn ? "opacity-100" : "opacity-20"}`}
             style={whiteShadowStyle}
           >
-            <div className="p-8 text-center">
-              <h2 className="text-5xl font-bold text-red-800 mb-7">
+            <div className="p-6 sm:p-8 text-center">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-red-800 mb-5 sm:mb-7">
                 {slides[currentSlide].title}
               </h2>
-              <p className="text-white text-xl">{slides[currentSlide].content}</p>
+              <p className="text-white text-lg sm:text-xl">{slides[currentSlide].content}</p>
+            </div>
+          </div>
+          <div className={`lg:hidden w-full h-auto sm:aspect-w-16 sm:aspect-h-9 overflow-hidden rounded-lg bg-opacity-20 bg-black backdrop-blur-lg flex justify-center items-center transition-opacity duration-500 ${slideIn ? "opacity-100" : "opacity-20"}`}>
+            <div className="p-6 sm:p-8 text-center">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-red-800 mb-5 sm:mb-7">
+                {slides[currentSlide].title}
+              </h2>
+              <p className="text-white text-lg sm:text-xl">{slides[currentSlide].content}</p>
             </div>
           </div>
         </div>

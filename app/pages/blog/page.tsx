@@ -5,34 +5,38 @@ import TestimonialCarousel from "@/app/components/Carousel";
 
 const Blog = () => {
   return (
-    <div className="max-w-5xl mx-auto px-6 py-12">
-      <Link href="/">
-        <button className="text-red-600 hover:underline text-lg my-14">
-          Regresar al inicio
-        </button>
-      </Link>
-
-      <Link href="#faq">
-        <button className="text-red-600 mx-10 hover:underline text-lg my-14">
-          Preguntas Frecuentes
-        </button>
-      </Link>
+    <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div className="flex flex-wrap justify-center -mx-2">
+        <Link href="/">
+          <button className="text-red-600 hover:underline text-lg my-3 mx-2">
+            Regresar al inicio
+          </button>
+        </Link>
+        <Link href="#faq">
+          <button className="text-red-600 hover:underline text-lg my-3 mx-2">
+            Preguntas Frecuentes
+          </button>
+        </Link>
+      </div>
 
       <article className="space-y-6">
-        <h1 className="text-3xl font-bold text-red-500">
+        <h1 className="text-2xl sm:text-3xl font-bold text-red-500 text-center">
           De idea a innovación:{" "}
-          <b className="text-white font-semibold">
+          <span className="text-white font-semibold">
             Transformando Ideas en Emprendimientos Exitosos: La Misión de
             UnisHub
-          </b>
+          </span>
         </h1>
 
-        <Image
-          src="/emprendedor.jpg"
-          width={900}
-          height={900}
-          alt="emprendedor"
-        />
+        <div className="my-6">
+          <Image
+            src="/emprendedor.jpg"
+            width={900}
+            height={600} // Ajustado para una relación de aspecto más común
+            layout="responsive" // Hace que la imagen sea responsive
+            alt="Emprendedor"
+          />
+        </div>
 
         <div className="text-gray-200 text-xl">
           <article>
@@ -72,8 +76,9 @@ const Blog = () => {
               comienzo común: un concepto brillante. En UnisHub, llevamos esos
               conceptos a través de un proceso de refinamiento, desde la
               validación del mercado hasta la estrategia de marketing,
-              preparando a cada emprendimiento para el crucial &quot;Demo Day&quot; donde
-              las ideas se presentan ante inversores y la comunidad.
+              preparando a cada emprendimiento para el crucial &quot;Demo
+              Day&quot; donde las ideas se presentan ante inversores y la
+              comunidad.
             </p>
             <br></br>
             <h2>Apoyo Integral</h2>
@@ -164,15 +169,15 @@ const Blog = () => {
           </div>
         </div>
 
-        <div className="mt-10">
-          <a
-            href="https://www.youtube.com/@CanalUnisGT/videos"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-red-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-red-800 transition duration-300"
-          >
-            Visita nuestro canal de YouTube
-          </a>
+        <div className="text-center my-12">
+          <Link href="https://www.youtube.com/@CanalUnisGT/videos">
+            <button
+              rel="noopener noreferrer"
+              className="inline-block bg-red-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-red-800 transition duration-300"
+            >
+              Visita nuestro canal de YouTube
+            </button>
+          </Link>
         </div>
       </article>
     </div>
