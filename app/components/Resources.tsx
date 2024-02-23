@@ -38,7 +38,7 @@ const Resources = () => {
         <Link href="https://www.youtube.com/@CanalUnisGT/videos">
           <button
             rel="noopener noreferrer"
-            className="text-2xl md:text-4xl font-light font-poppins text-white hover:text-red-600 hover:underline"
+            className="text-2xl md:text-4xl font-light font-poppins hover:text-red-600 hover:underline"
           >
             Más videos
           </button>
