@@ -11,7 +11,7 @@ const Program = () => {
       />
       <div className="container mx-auto px-6 mt-20 mb-24">
         <div className="text-center mb-10 md:mb-44">
-          <h2 className="text-2xl md:text-6xl font-bold">
+          <h2 className="text-white text-2xl md:text-6xl font-bold">
             Programa de <b className="text-red-800">Incubación</b>
           </h2>
         </div>

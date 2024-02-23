@@ -31,7 +31,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <div className="relative h-screen w-full overflow-hidden mb-0">
+      <div className="bg-black relative h-screen w-full overflow-hidden mb-0">
         <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-radial from-white via-transparent to-gray-700 min-w-[150%] min-h-[150%] rounded-full opacity-10"></div>
         <div
           id="home"
