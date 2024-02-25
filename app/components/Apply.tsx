@@ -97,7 +97,7 @@ const ApplyNow = () => {
           <label htmlFor="project" className="block text-lg font-medium">
             Descripción del Proyecto{" "}
             <b className="text-gray-400">
-              (Asegurate te describir tu proyecto completo y detalladamente)
+              (Asegurate de describir tu proyecto completo y detalladamente)
             </b>
           </label>
           <textarea
