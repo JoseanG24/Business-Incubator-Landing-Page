@@ -33,8 +33,10 @@ export const POST = async (request: NextRequest) => {
       });
     }
 
-    // Instance of Google Sheets API
+    // Create client
     const authClient = (await auth.getClient()) as any;
+
+    // Instance of Google Sheets API
     const googleSheets = google.sheets({ version: "v4", auth: authClient });
 
     // Get metadata about spreadsheet
