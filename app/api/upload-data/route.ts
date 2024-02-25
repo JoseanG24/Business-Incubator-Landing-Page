@@ -5,7 +5,7 @@ const credentials = {
   type: process.env.TYPE,
   project_id: process.env.PROJECT_ID,
   private_key_id: process.env.PRIVATE_KEY_ID,
-  private_key: process.env.PRIVATE_KEY ? process.env.PRIVATE_KEY.replace(/\\n/g, "\n") : '',
+  private_key: process.env.PRIVATE_KEY,
   client_email: process.env.CLIENT_EMAIL,
   client_id: process.env.CLIENT_ID,
   auth_uri: process.env.AUTH_URI,
@@ -33,8 +33,10 @@ export const POST = async (request: NextRequest) => {
       });
     }
 
-    // Instance of Google Sheets API
+    // Create client
     const authClient = (await auth.getClient()) as any;
+
+    // Instance of Google Sheets API
     const googleSheets = google.sheets({ version: "v4", auth: authClient });
 
     // Get metadata about spreadsheet
